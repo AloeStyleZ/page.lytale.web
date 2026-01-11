@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SocialDropdown } from './social-dropdown';
+import { SocialDropdownComponent } from './social-dropdown';
 
 describe('SocialDropdown', () => {
-  let component: SocialDropdown;
-  let fixture: ComponentFixture<SocialDropdown>;
+  let component: SocialDropdownComponent;
+  let fixture: ComponentFixture<SocialDropdownComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SocialDropdown]
+      imports: [SocialDropdownComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SocialDropdown);
+    fixture = TestBed.createComponent(SocialDropdownComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

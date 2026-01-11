@@ -42,12 +42,223 @@
     "needHelp": "¿Necesitas ayuda para comenzar?",
     "guide": "Guía"
   },
+   "footer": {
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad",
+    "discord": "Discord",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "notaffiliated": "Lytale no está afiliado con Hypixel Studios o Hytale."
+  },
    "about": {
     "welcome": "Bienvenido a Lytale",
+    "welcome-text": "Lytale es un servidor de Hytale que te sumerge en un mundo devastado por 67 años de guerra entre el Imperio y la Alianza Democrática. Aquí, tus decisiones importan tanto como tu espada.",
+    "welcome-text2": "Más que un simple survival, Lytale es una experiencia RPG interactiva donde tres visiones del futuro chocan, y tú decides qué lado de la historia escribirás.",
     "theWorld": "El Mundo de Sangre y Hielo",
+    "theWorld-text": "El conflicto entre sangre y hielo ha dejado cicatrices en cada rincón del mundo. Tres figuras emergen como catalizadores del cambio:",
+    "theWorld-william": "William Kerch es un estratega brillante y pragmático que manipula su propio bando para poder terminar la guerra, no por poder, sino para alcanzar la paz",
+    "theWorld-ludwig": "Desertor imperial de 18 años que descubre la corrupción de ambos bandos. Lidera una tercera vía: una rebelión que busca destruir ambos sistemas autoritarios.",
+    "theWorld-rudeus": "Mayor Imperial de 25 años, estratega brillante que busca reformar el Imperio desde dentro mientras observa cómo las piezas se mueven hacia una guerra total.",
     "gameplay": "Experiencia de Juego",
+    "gameplay-1": "Mundo Survival",
+    "gameplay-1text": "Explora un mundo abierto persistente donde construyes tu base, formas alianzas, y sobrevives en tierras marcadas por la guerra. Tus construcciones y progresos son permanentes.",
+    "gameplay-2": "Dungeons Épicas",
+    "gameplay-2text": "Adéntrate en mazmorras instanciadas diseñadas para grupos. Fortalezas imperiales, templos antiguos y campos de batalla olvidados te esperan con recompensas únicas.",
+    "gameplay-3": "Sistema de Misiones",
+    "gameplay-3text": "Completa misiones narrativas que afectan la historia del servidor. Tus decisiones en quest chains determinarán qué facción gana poder y cómo evoluciona el conflicto.",
+    "gameplay-4": "Tres Facciones",
+    "gameplay-4text": "Únete al Imperio, la Alianza Democrática, o la Rebelión de Ludwig. Cada facción tiene sus propias bases, misiones exclusivas, y objetivos en conflicto.",
+
     "features": "Características Únicas",
+    "features-1": "Narrativa Dinámica",
+    "features-1text": "Las acciones de los jugadores cambian eventos del servidor",
+    "features-2": "Economía Real",
+    "features-2text": "Sistema de comercio entre facciones y mercado neutral",
+    "features-3": "PvP Realista",
+    "features-3text": "PvP entre facciones del equipo contrario, y duelos personalizados",
+    "features-4": "Clases Personalizadas",
+    "features-4text": "Buen sistema de progresión del juego para los atributos",
+    "features-5": "Eventos Semanales",
+    "features-5text": "Batallas masivas y raids cooperativas",
+    "features-6": "Lore Interactivo",
+    "features-6text": "Capitulos por Temporadas en los que los jugadores interactuan",
     "joinCta": "La Guerra Te Espera",
+    "joinCta-text": "Tres hombres, tres visiones de futuro, destinados a chocar en un conflicto que decidirá si la guerra termina con paz verdadera o la sangre de millones.",
+    "joinCta-msj": "¿De qué lado de la historia estarás?",
     "playNow": "Jugar Ahora"
+  },
+
+   "terms": {
+    "title": "Términos y Condiciones",
+    "lastUpdate": "Última actualización",
+    "section1": {
+      "title": "Aceptación de Términos",
+      "p1": "Al acceder y jugar en el servidor de Lytale (\"el Servidor\"), aceptas estar legalmente obligado por estos Términos y Condiciones. Si no estás de acuerdo con alguna parte de estos términos, no debes utilizar nuestros servicios.",
+      "p2": "Lytale es un servidor privado de Hytale no afiliado oficialmente con Hypixel Studios. Todo el contenido de Hytale es propiedad de Hypixel Studios."
+    },
+    "section2": {
+      "title": "Elegibilidad",
+      "intro": "Para utilizar nuestros servicios, debes:",
+      "age": "Tener al menos 13 años de edad",
+      "parental": "Si eres menor de 18 años, contar con permiso de tus padres o tutor legal",
+      "legitimate": "Poseer una copia legítima de Hytale",
+      "laws": "Cumplir con todas las leyes aplicables en tu jurisdicción",
+      "verification": "Nos reservamos el derecho de solicitar verificación de edad en cualquier momento."
+    },
+    "section3": {
+      "title": "Reglas de Conducta",
+      "prohibited": "Está estrictamente prohibido:",
+      "hacks": {
+        "title": "Hacks y Trampas",
+        "clients": "Uso de clientes modificados",
+        "macros": "Macros o autoclickers",
+        "xray": "X-Ray o recursos prohibidos",
+        "bugs": "Explotar bugs o glitches"
+      },
+      "toxic": {
+        "title": "Conducta Tóxica",
+        "harassment": "Acoso o bullying",
+        "discrimination": "Discriminación (raza, género, etc.)",
+        "spam": "Spam o flood en chat",
+        "advertising": "Publicidad no autorizada"
+      },
+      "illegal": {
+        "title": "Actividades Ilegales",
+        "personal": "Compartir información personal",
+        "threats": "Amenazas o violencia",
+        "sexual": "Contenido sexual explícito",
+        "fraud": "Fraude o estafas"
+      },
+      "security": {
+        "title": "Seguridad del Servidor",
+        "ddos": "Intentos de DDoS",
+        "access": "Acceso no autorizado",
+        "social": "Ingeniería social",
+        "malware": "Distribución de malware"
+      }
+    },
+    "section4": {
+      "title": "Sistema de Sanciones",
+      "warning": {
+        "title": "Advertencia",
+        "description": "Primera infracción menor. Se registra en tu historial."
+      },
+      "suspension": {
+        "title": "Suspensión Temporal",
+        "description": "Infracciones repetidas o moderadas. Duración: 1-30 días."
+      },
+      "ban": {
+        "title": "Ban Permanente",
+        "description": "Infracciones graves o reincidencia. No hay apelación excepto en casos excepcionales."
+      },
+      "disclaimer": "El staff tiene discreción total para determinar sanciones. Las decisiones son finales."
+    },
+    "section5": {
+      "title": "Compras y Donaciones",
+      "policy": "Política de la Tienda:",
+      "final": "Todas las compras son finales y no reembolsables",
+      "digital": "Los rangos, items y ventajas son digitales y no transferibles",
+      "availability": "No garantizamos disponibilidad permanente de contenido comprado",
+      "closure": "Si el servidor cierra, no hay derecho a compensación",
+      "prices": "Los precios pueden cambiar sin previo aviso",
+      "refund": {
+        "title": "Excepciones de Reembolso",
+        "intro": "Solo se procesan reembolsos en caso de:",
+        "technical": "Error técnico que impida recibir el contenido comprado",
+        "duplicate": "Cargo duplicado por error del sistema de pago",
+        "unauthorized": "Compra no autorizada (requiere prueba)",
+        "time": "Los reembolsos deben solicitarse dentro de 48 horas mediante ticket en Discord."
+      },
+      "authorization": "Al realizar una compra, confirmas tener autorización del titular de la tarjeta/método de pago."
+    },
+    "section6": {
+      "title": "Propiedad Intelectual",
+      "lytale": {
+        "title": "Contenido de Lytale",
+        "description": "Todo el contenido original de Lytale (lore, mapas personalizados, plugins, texturas, historias) es propiedad exclusiva de Lytale y está protegido por derechos de autor."
+      },
+      "hytale": {
+        "title": "Contenido de Hytale",
+        "description": "Hytale y todos sus elementos son propiedad de Hypixel Studios. Lytale no tiene afiliación oficial con Hypixel Studios."
+      },
+      "user": {
+        "title": "Contenido de Usuarios",
+        "intro": "Al crear contenido en el servidor (construcciones, skins, etc.), otorgas a Lytale una licencia no exclusiva para:",
+        "promotion": "Usar tu contenido en promociones del servidor",
+        "modify": "Modificar o adaptar construcciones para eventos",
+        "share": "Compartir capturas/videos que incluyan tu contenido"
+      }
+    },
+    "section7": {
+      "title": "Privacidad y Datos",
+      "collect": "Recopilamos y almacenamos:",
+      "uuid": {
+        "label": "UUID de Hytale:",
+        "purpose": "Para identificar tu cuenta"
+      },
+      "ip": {
+        "label": "Dirección IP:",
+        "purpose": "Para seguridad y prevención de ban evasion"
+      },
+      "game": {
+        "label": "Datos de juego:",
+        "purpose": "Progreso, inventario, estadísticas"
+      },
+      "chat": {
+        "label": "Logs de chat:",
+        "purpose": "Para moderación y resolución de disputas"
+      },
+      "purchase": {
+        "label": "Información de compra:",
+        "purpose": "Email y transacciones (procesado por Tebex)"
+      },
+      "usage": {
+        "title": "Uso de Datos",
+        "intro": "Tus datos se utilizan únicamente para:",
+        "operate": "Operar y mejorar el servidor",
+        "prevent": "Prevenir trampas y abusos",
+        "process": "Procesar compras",
+        "communicate": "Comunicación sobre el servidor (actualizaciones, mantenimiento)",
+        "never": "Nunca vendemos ni compartimos tus datos personales con terceros excepto procesadores de pago."
+      },
+      "more": "Para más información, consulta nuestra",
+      "privacy": "Política de Privacidad"
+    },
+    "section8": {
+      "title": "Limitación de Responsabilidad",
+      "asis": "Lytale se proporciona \"TAL CUAL\" sin garantías de ningún tipo.",
+      "notresponsible": "No nos hacemos responsables de:",
+      "loss": "Pérdida de progreso, items o datos del juego",
+      "downtime": "Tiempo de inactividad del servidor (mantenimiento, caídas, ataques DDoS)",
+      "changes": "Cambios en mecánicas, economía o contenido del juego",
+      "interactions": "Interacciones entre jugadores (estafas, griefing permitido en zonas PvP)",
+      "damages": "Daños derivados del uso del servidor",
+      "closure": "Importante: El servidor puede cerrar en cualquier momento sin previo aviso. No garantizamos disponibilidad permanente."
+    },
+    "section9": {
+      "title": "Modificaciones a los Términos",
+      "right": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entrarán en vigor inmediatamente tras su publicación.",
+      "notify": "Te notificaremos sobre cambios significativos mediante:",
+      "server": "Anuncio en el servidor",
+      "discord": "Publicación en Discord",
+      "website": "Actualización en esta página web",
+      "continue": "Continuar usando el servidor tras cambios en los términos implica aceptación de los nuevos términos."
+    },
+    "section10": {
+      "title": "Ley Aplicable y Jurisdicción",
+      "governed": "Estos términos se rigen por la ley.",
+      "disputes": "Cualquier disputa relacionada con estos términos será resuelta mediante:",
+      "mediation": "Primero: Mediación amistosa",
+      "arbitration": "Segundo: Arbitraje vinculante",
+      "courts": "Último recurso: Tribunales"
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Si tienes preguntas sobre estos términos, contáctanos:"
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados.",
+      "notaffiliated": "Lytale no está afiliado con Hypixel Studios o Hytale."
+    }
   }
 }

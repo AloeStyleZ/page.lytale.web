@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MediaDropdownComponent } from './media-dropdown';
+import { TermsComponent } from './terms';
 
-describe('MediaDropdown', () => {
-  let component: MediaDropdownComponent;
-  let fixture: ComponentFixture<MediaDropdownComponent>;
+describe('Terms', () => {
+  let component: TermsComponent;
+  let fixture: ComponentFixture<TermsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MediaDropdownComponent]
+      imports: [TermsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MediaDropdownComponent);
+    fixture = TestBed.createComponent(TermsComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

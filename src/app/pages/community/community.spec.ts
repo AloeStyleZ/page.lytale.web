@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MediaDropdownComponent } from './media-dropdown';
+import { Community } from './community';
 
-describe('MediaDropdown', () => {
-  let component: MediaDropdownComponent;
-  let fixture: ComponentFixture<MediaDropdownComponent>;
+describe('Community', () => {
+  let component: Community;
+  let fixture: ComponentFixture<Community>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MediaDropdownComponent]
+      imports: [Community]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MediaDropdownComponent);
+    fixture = TestBed.createComponent(Community);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

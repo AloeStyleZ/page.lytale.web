@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar';
-import { HeroComponent } from './components/hero/hero';
+import { FooterComponent } from './components/footer/footer';
 import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle';
 import { LanguageSelectorComponent } from './components/language-selector/language-selector';
 import { DonateButtonComponent } from './components/donate-button/donate-button';
@@ -12,8 +12,8 @@ import { TranslateService } from '@ngx-translate/core';
   standalone: true,
   imports: [
     RouterOutlet, 
-    NavbarComponent, 
-    HeroComponent, 
+    NavbarComponent,
+    FooterComponent,
     ThemeToggleComponent,
     LanguageSelectorComponent,
     DonateButtonComponent

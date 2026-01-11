@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LauncherModal } from './launcher-modal';
+import { LauncherModalComponent } from './launcher-modal';
 
 describe('LauncherModal', () => {
-  let component: LauncherModal;
-  let fixture: ComponentFixture<LauncherModal>;
+  let component: LauncherModalComponent;
+  let fixture: ComponentFixture<LauncherModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LauncherModal]
+      imports: [LauncherModalComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LauncherModal);
+    fixture = TestBed.createComponent(LauncherModalComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

@@ -1,0 +1,38 @@
+<footer class="relative z-30 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-sm border-t border-primary/20 py-8">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Links principales -->
+    <div class="flex flex-wrap justify-center gap-6 mb-6 text-sm">
+      <a routerLink="/terms" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors font-display tracking-wide uppercase">
+        {{ 'footer.terms' | translate }}
+      </a>
+      <span class="text-gray-600 dark:text-gray-600">|</span>
+      <a 
+        routerLink="/privacy" 
+        class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors font-display tracking-wide uppercase"
+      >
+        {{ 'footer.privacy' | translate }}
+      </a>
+      <span class="text-gray-600 dark:text-gray-600">|</span>
+      <a 
+        href="https://discord.gg/AmA4P4Fa" 
+        target="_blank"
+        class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors font-display tracking-wide uppercase"
+      >
+        {{ 'footer.discord' | translate }}
+      </a>
+      <span class="text-gray-600 dark:text-gray-600">|</span>
+      <a 
+        href="mailto:lytaleserver@gmail.com" 
+        class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors font-display tracking-wide uppercase"
+      >
+        {{ 'footer.contact' | translate }}
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-gray-500 dark:text-gray-600 text-xs space-y-1">
+      <p>© {{ currentYear }} Lytale. {{ 'footer.rights' | translate }}</p>
+      <p>{{ 'footer.notaffiliated' | translate }}</p>
+    </div>
+  </div>
+</footer>

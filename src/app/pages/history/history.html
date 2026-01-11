@@ -1,1 +1,136 @@
-<p>history works!</p>
+<div class="relative min-h-screen">
+  <!-- Background Image -->
+  <div class="fixed inset-0 z-0">
+    <img 
+      alt="Lytale background" 
+      class="w-full h-full object-cover object-center opacity-70 dark:opacity-50" 
+      src="https://bucket.lytale.com/Fondo3.jpg"
+    />
+  </div>
+
+  <!-- Overlays -->
+  <div class="fixed inset-0 z-10 bg-hero-vignette-light dark:bg-hero-vignette pointer-events-none opacity-60 dark:opacity-70"></div>
+  <div class="fixed inset-0 z-10 bg-gradient-to-t from-background-light/20 via-transparent to-background-light/5 dark:from-background-dark/70 dark:via-transparent dark:to-black/50 pointer-events-none"></div>
+  <div class="fixed inset-0 z-10 bg-gradient-to-r from-background-light/15 via-transparent to-background-light/15 dark:from-background-dark/60 dark:via-transparent dark:to-background-dark/60 pointer-events-none"></div>
+
+  <!-- Content -->
+  <div class="relative z-20 min-h-screen pt-32 px-6 pb-12">
+    <div class="max-w-7xl mx-auto">
+      <!-- Título -->
+      <h1 class="text-5xl md:text-7xl font-display font-bold text-gray-200 dark:text-gray-100 mb-12 tracking-wider uppercase text-glow text-center">
+        {{ 'media.history' | translate }}
+      </h1>
+
+      <span>Soon...</span>
+
+      <!-- Selector de Temporadas/Arcos -->
+      <!-- <div class="mb-8">
+        <div class="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+          @for (season of seasons; track season.id) {
+            <button
+              (click)="selectSeason(season.id)"
+              [class.bg-primary]="selectedSeasonId === season.id"
+              [class.text-white]="selectedSeasonId === season.id"
+              [class.bg-black]="selectedSeasonId !== season.id"
+              [class.text-gray-300]="selectedSeasonId !== season.id"
+              class="px-6 py-3 rounded-lg font-display tracking-wider uppercase transition-all duration-300 hover:bg-primary hover:text-white whitespace-nowrap border border-primary/40 hover:border-primary"
+            >
+              {{ season.name }}
+            </button>
+          }
+        </div>
+      </div> -->
+
+      <!-- Grid de Capítulos -->
+      <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        @for (chapter of getSelectedSeasonChapters(); track chapter.id) {
+          <div 
+            (click)="selectChapter(chapter)"
+            class="group relative bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg overflow-hidden cursor-pointer hover:border-primary transition-all duration-300 hover:scale-105"
+          >
+             
+            <div class="relative aspect-video overflow-hidden">
+              <img 
+                [src]="chapter.thumbnail" 
+                [alt]="chapter.title"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+             
+              <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="material-icons-outlined text-primary text-6xl">play_circle</span>
+              </div>
+              
+              <div class="absolute bottom-2 right-2 bg-black/80 px-2 py-1 rounded text-xs text-gray-200">
+                {{ chapter.duration }}
+              </div>
+            </div>
+
+            
+            <div class="p-4">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <h3 class="text-xl font-display font-bold text-gray-100 group-hover:text-primary transition-colors">
+                  {{ chapter.episode }}. {{ chapter.title }}
+                </h3>
+              </div>
+              <p class="text-gray-400 text-sm line-clamp-2 leading-relaxed">
+                {{ chapter.description }}
+              </p>
+            </div>
+          </div>
+        }
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Modal de Video -->
+  <!-- @if (selectedChapter) {
+    <div 
+      (click)="closeVideo()"
+      class="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+    >
+      <div 
+        (click)="$event.stopPropagation()"
+        class="relative w-full max-w-6xl bg-surface-dark border-2 border-primary/40 rounded-lg overflow-hidden"
+      >
+        
+        <button 
+          (click)="closeVideo()"
+          class="absolute top-4 right-4 z-10 bg-black/50 hover:bg-black/80 text-white rounded-full p-2 transition-colors"
+        >
+          <span class="material-icons-outlined text-3xl">close</span>
+        </button>
+
+   
+        <div class="aspect-video bg-black">
+          <iframe 
+            [src]="selectedChapter.videoUrl | safe"
+            class="w-full h-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+       
+        <div class="p-6 bg-surface-dark">
+          <h2 class="text-3xl font-display font-bold text-primary mb-2">
+            {{ selectedChapter.episode }}. {{ selectedChapter.title }}
+          </h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            {{ selectedChapter.description }}
+          </p>
+          <div class="flex items-center gap-4 text-sm text-gray-400">
+            <span class="flex items-center gap-1">
+              <span class="material-icons-outlined text-primary text-lg">schedule</span>
+              {{ selectedChapter.duration }}
+            </span>
+            <span class="flex items-center gap-1">
+              <span class="material-icons-outlined text-primary text-lg">calendar_today</span>
+              {{ selectedChapter.releaseDate }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  } -->
+</div>

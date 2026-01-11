@@ -10,8 +10,11 @@
   <div 
     [class.left-0]="position === 'left'"
     [class.right-0]="position === 'right'"
-    class="absolute top-full mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50"
+    class="absolute top-full pt-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50"
   >
+    <!-- Área invisible para mantener hover -->
+    <div class="h-2 w-full"></div>
+    
     <div class="bg-surface-light dark:bg-surface-dark border border-primary/40 rounded-lg shadow-2xl py-3 px-2 min-w-[200px]">
       @for (social of socialLinks; track social.name) {
         <a 

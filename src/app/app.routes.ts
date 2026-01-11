@@ -28,14 +28,19 @@ export const routes: Routes = [
     title: 'History - Lytale'
   },
   {
-    path: 'server',
-    loadComponent: () => import('./pages/server/server').then(m => m.ServerComponent),
-    title: 'Server - Lytale'
+    path: 'community',
+    loadComponent: () => import('./pages/community/community').then(m => m.Community),
+    title: 'Community - Lytale'
   },
   {
     path: 'events',
     loadComponent: () => import('./pages/events/events').then(m => m.EventsComponent),
     title: 'Events - Lytale'
+  },
+   {
+    path: 'terms',
+    loadComponent: () => import('./pages/terms/terms').then(m => m.TermsComponent),
+    title: 'Terms and Conditions - Lytale'
   },
   {
     path: '**',

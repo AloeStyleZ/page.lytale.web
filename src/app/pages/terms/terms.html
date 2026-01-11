@@ -1,0 +1,341 @@
+<div class="relative min-h-screen">
+  <!-- Background Image -->
+  <div class="fixed inset-0 z-0">
+    <img 
+      alt="Lytale background" 
+      class="w-full h-full object-cover object-center opacity-70 dark:opacity-50" 
+      src="https://bucket.lytale.com/Fondo2.jpg"
+    />
+  </div>
+
+  <!-- Overlays -->
+  <div class="fixed inset-0 z-10 bg-hero-vignette-light dark:bg-hero-vignette pointer-events-none opacity-60 dark:opacity-70"></div>
+  <div class="fixed inset-0 z-10 bg-gradient-to-t from-background-light/20 via-transparent to-background-light/5 dark:from-background-dark/70 dark:via-transparent dark:to-black/50 pointer-events-none"></div>
+
+  <!-- Content -->
+  <div class="relative z-20 min-h-screen pt-32 px-6 pb-12">
+    <div class="max-w-5xl mx-auto">
+      <!-- Título -->
+      <h1 class="text-5xl md:text-7xl font-display font-bold text-gray-200 dark:text-gray-100 mb-4 tracking-wider uppercase text-glow text-center">
+        {{ 'terms.title' | translate }}
+      </h1>
+      <p class="text-center text-gray-400 mb-12">
+        {{ 'terms.lastUpdate' | translate }}: {{ lastUpdate }}
+      </p>
+
+      <div class="space-y-6">
+        <!-- 1. Aceptación de Términos -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            1. {{ 'terms.section1.title' | translate }}
+          </h2>
+          <p class="text-gray-200 dark:text-gray-300 leading-relaxed mb-4">
+            {{ 'terms.section1.p1' | translate }}
+          </p>
+          <p class="text-gray-200 dark:text-gray-300 leading-relaxed">
+            {{ 'terms.section1.p2' | translate }}
+          </p>
+        </div>
+
+        <!-- 2. Elegibilidad -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            2. {{ 'terms.section2.title' | translate }}
+          </h2>
+          <div class="space-y-3 text-gray-200 dark:text-gray-300 leading-relaxed">
+            <p>{{ 'terms.section2.intro' | translate }}</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li>{{ 'terms.section2.age' | translate }}</li>
+              <li>{{ 'terms.section2.parental' | translate }}</li>
+              <li>{{ 'terms.section2.legitimate' | translate }}</li>
+              <li>{{ 'terms.section2.laws' | translate }}</li>
+            </ul>
+            <p class="text-yellow-400 mt-4">
+              <span class="material-icons-outlined text-lg align-middle mr-2">warning</span>
+              {{ 'terms.section2.verification' | translate }}
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Reglas del Servidor -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            3. {{ 'terms.section3.title' | translate }}
+          </h2>
+          <div class="space-y-4 text-gray-200 dark:text-gray-300 leading-relaxed">
+            <p class="font-semibold text-gray-100">{{ 'terms.section3.prohibited' | translate }}</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Hacks -->
+              <div class="bg-black/30 p-4 rounded-lg border border-red-500/20">
+                <h3 class="text-red-500 font-display font-bold mb-2 flex items-center gap-2">
+                  <span class="material-icons-outlined">block</span>
+                  {{ 'terms.section3.hacks.title' | translate }}
+                </h3>
+                <ul class="list-disc list-inside space-y-1 text-sm">
+                  <li>{{ 'terms.section3.hacks.clients' | translate }}</li>
+                  <li>{{ 'terms.section3.hacks.macros' | translate }}</li>
+                  <li>{{ 'terms.section3.hacks.xray' | translate }}</li>
+                  <li>{{ 'terms.section3.hacks.bugs' | translate }}</li>
+                </ul>
+              </div>
+
+              <!-- Conducta Tóxica -->
+              <div class="bg-black/30 p-4 rounded-lg border border-red-500/20">
+                <h3 class="text-red-500 font-display font-bold mb-2 flex items-center gap-2">
+                  <span class="material-icons-outlined">report</span>
+                  {{ 'terms.section3.toxic.title' | translate }}
+                </h3>
+                <ul class="list-disc list-inside space-y-1 text-sm">
+                  <li>{{ 'terms.section3.toxic.harassment' | translate }}</li>
+                  <li>{{ 'terms.section3.toxic.discrimination' | translate }}</li>
+                  <li>{{ 'terms.section3.toxic.spam' | translate }}</li>
+                  <li>{{ 'terms.section3.toxic.advertising' | translate }}</li>
+                </ul>
+              </div>
+
+              <!-- Actividades Ilegales -->
+              <div class="bg-black/30 p-4 rounded-lg border border-red-500/20">
+                <h3 class="text-red-500 font-display font-bold mb-2 flex items-center gap-2">
+                  <span class="material-icons-outlined">gavel</span>
+                  {{ 'terms.section3.illegal.title' | translate }}
+                </h3>
+                <ul class="list-disc list-inside space-y-1 text-sm">
+                  <li>{{ 'terms.section3.illegal.personal' | translate }}</li>
+                  <li>{{ 'terms.section3.illegal.threats' | translate }}</li>
+                  <li>{{ 'terms.section3.illegal.sexual' | translate }}</li>
+                  <li>{{ 'terms.section3.illegal.fraud' | translate }}</li>
+                </ul>
+              </div>
+
+              <!-- Seguridad -->
+              <div class="bg-black/30 p-4 rounded-lg border border-red-500/20">
+                <h3 class="text-red-500 font-display font-bold mb-2 flex items-center gap-2">
+                  <span class="material-icons-outlined">security</span>
+                  {{ 'terms.section3.security.title' | translate }}
+                </h3>
+                <ul class="list-disc list-inside space-y-1 text-sm">
+                  <li>{{ 'terms.section3.security.ddos' | translate }}</li>
+                  <li>{{ 'terms.section3.security.access' | translate }}</li>
+                  <li>{{ 'terms.section3.security.social' | translate }}</li>
+                  <li>{{ 'terms.section3.security.malware' | translate }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Sanciones -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            4. {{ 'terms.section4.title' | translate }}
+          </h2>
+          <div class="space-y-4 text-gray-200 dark:text-gray-300 leading-relaxed">
+            <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
+              <h3 class="text-yellow-500 font-display font-bold mb-2">⚠️ {{ 'terms.section4.warning.title' | translate }}</h3>
+              <p class="text-sm">{{ 'terms.section4.warning.description' | translate }}</p>
+            </div>
+
+            <div class="bg-orange-500/10 border border-orange-500/30 rounded-lg p-4">
+              <h3 class="text-orange-500 font-display font-bold mb-2">⏱️ {{ 'terms.section4.suspension.title' | translate }}</h3>
+              <p class="text-sm">{{ 'terms.section4.suspension.description' | translate }}</p>
+            </div>
+
+            <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
+              <h3 class="text-red-500 font-display font-bold mb-2">🔨 {{ 'terms.section4.ban.title' | translate }}</h3>
+              <p class="text-sm">{{ 'terms.section4.ban.description' | translate }}</p>
+            </div>
+
+            <p class="text-gray-400 text-sm mt-4">
+              * {{ 'terms.section4.disclaimer' | translate }}
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. Compras -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            5. {{ 'terms.section5.title' | translate }}
+          </h2>
+          <div class="space-y-4 text-gray-200 dark:text-gray-300 leading-relaxed">
+            <p class="font-semibold text-gray-100">{{ 'terms.section5.policy' | translate }}</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li>{{ 'terms.section5.final' | translate }}</li>
+              <li>{{ 'terms.section5.digital' | translate }}</li>
+              <li>{{ 'terms.section5.availability' | translate }}</li>
+              <li>{{ 'terms.section5.closure' | translate }}</li>
+              <li>{{ 'terms.section5.prices' | translate }}</li>
+            </ul>
+
+            <div class="bg-primary/10 border border-primary/30 rounded-lg p-4 mt-4">
+              <h3 class="text-primary font-display font-bold mb-2">💳 {{ 'terms.section5.refund.title' | translate }}</h3>
+              <p class="text-sm">{{ 'terms.section5.refund.intro' | translate }}</p>
+              <ul class="list-disc list-inside space-y-1 text-sm ml-4 mt-2">
+                <li>{{ 'terms.section5.refund.technical' | translate }}</li>
+                <li>{{ 'terms.section5.refund.duplicate' | translate }}</li>
+                <li>{{ 'terms.section5.refund.unauthorized' | translate }}</li>
+              </ul>
+              <p class="text-sm mt-2 text-gray-400">
+                {{ 'terms.section5.refund.time' | translate }}
+              </p>
+            </div>
+
+            <p class="text-yellow-400 mt-4">
+              <span class="material-icons-outlined text-lg align-middle mr-2">info</span>
+              {{ 'terms.section5.authorization' | translate }}
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. Propiedad Intelectual -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            6. {{ 'terms.section6.title' | translate }}
+          </h2>
+          <div class="space-y-4 text-gray-200 dark:text-gray-300 leading-relaxed">
+            <div class="bg-black/30 p-4 rounded-lg border border-primary/20">
+              <h3 class="text-gray-100 font-display font-bold mb-2">📜 {{ 'terms.section6.lytale.title' | translate }}</h3>
+              <p class="text-sm">{{ 'terms.section6.lytale.description' | translate }}</p>
+            </div>
+
+            <div class="bg-black/30 p-4 rounded-lg border border-blue-500/20">
+              <h3 class="text-gray-100 font-display font-bold mb-2">🎮 {{ 'terms.section6.hytale.title' | translate }}</h3>
+              <p class="text-sm">{{ 'terms.section6.hytale.description' | translate }}</p>
+            </div>
+
+            <div class="bg-black/30 p-4 rounded-lg border border-purple-500/20">
+              <h3 class="text-gray-100 font-display font-bold mb-2">🏗️ {{ 'terms.section6.user.title' | translate }}</h3>
+              <p class="text-sm mb-2">{{ 'terms.section6.user.intro' | translate }}</p>
+              <ul class="list-disc list-inside space-y-1 text-sm ml-4">
+                <li>{{ 'terms.section6.user.promotion' | translate }}</li>
+                <li>{{ 'terms.section6.user.modify' | translate }}</li>
+                <li>{{ 'terms.section6.user.share' | translate }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Privacidad -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            7. {{ 'terms.section7.title' | translate }}
+          </h2>
+          <div class="space-y-4 text-gray-200 dark:text-gray-300 leading-relaxed">
+            <p>{{ 'terms.section7.collect' | translate }}</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li><strong>{{ 'terms.section7.uuid.label' | translate }}</strong> {{ 'terms.section7.uuid.purpose' | translate }}</li>
+              <li><strong>{{ 'terms.section7.ip.label' | translate }}</strong> {{ 'terms.section7.ip.purpose' | translate }}</li>
+              <li><strong>{{ 'terms.section7.game.label' | translate }}</strong> {{ 'terms.section7.game.purpose' | translate }}</li>
+              <li><strong>{{ 'terms.section7.chat.label' | translate }}</strong> {{ 'terms.section7.chat.purpose' | translate }}</li>
+              <li><strong>{{ 'terms.section7.purchase.label' | translate }}</strong> {{ 'terms.section7.purchase.purpose' | translate }}</li>
+            </ul>
+
+            <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4 mt-4">
+              <h3 class="text-blue-500 font-display font-bold mb-2">🔒 {{ 'terms.section7.usage.title' | translate }}</h3>
+              <p class="text-sm mb-2">{{ 'terms.section7.usage.intro' | translate }}</p>
+              <ul class="list-disc list-inside space-y-1 text-sm ml-4">
+                <li>{{ 'terms.section7.usage.operate' | translate }}</li>
+                <li>{{ 'terms.section7.usage.prevent' | translate }}</li>
+                <li>{{ 'terms.section7.usage.process' | translate }}</li>
+                <li>{{ 'terms.section7.usage.communicate' | translate }}</li>
+              </ul>
+              <p class="text-sm mt-2 text-yellow-400">
+                ⚠️ {{ 'terms.section7.usage.never' | translate }}
+              </p>
+            </div>
+
+            <p class="text-sm text-gray-400 mt-4">
+              {{ 'terms.section7.more' | translate }} <a routerLink="/privacy" class="text-primary hover:underline">{{ 'terms.section7.privacy' | translate }}</a>.
+            </p>
+          </div>
+        </div>
+
+        <!-- 8. Responsabilidad -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            8. {{ 'terms.section8.title' | translate }}
+          </h2>
+          <div class="space-y-3 text-gray-200 dark:text-gray-300 leading-relaxed">
+            <p class="font-semibold text-gray-100">{{ 'terms.section8.asis' | translate }}</p>
+            <p>{{ 'terms.section8.notresponsible' | translate }}</p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+              <li>{{ 'terms.section8.loss' | translate }}</li>
+              <li>{{ 'terms.section8.downtime' | translate }}</li>
+              <li>{{ 'terms.section8.changes' | translate }}</li>
+              <li>{{ 'terms.section8.interactions' | translate }}</li>
+              <li>{{ 'terms.section8.damages' | translate }}</li>
+            </ul>
+
+            <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4 mt-4">
+              <p class="text-sm text-red-400">
+                <span class="material-icons-outlined text-lg align-middle mr-2">warning</span>
+                {{ 'terms.section8.closure' | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Modificaciones -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            9. {{ 'terms.section9.title' | translate }}
+          </h2>
+          <div class="space-y-3 text-gray-200 dark:text-gray-300 leading-relaxed">
+            <p>{{ 'terms.section9.right' | translate }}</p>
+            <p>{{ 'terms.section9.notify' | translate }}</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>{{ 'terms.section9.server' | translate }}</li>
+              <li>{{ 'terms.section9.discord' | translate }}</li>
+              <li>{{ 'terms.section9.website' | translate }}</li>
+            </ul>
+            <p class="text-yellow-400">
+              <span class="material-icons-outlined text-lg align-middle mr-2">info</span>
+              {{ 'terms.section9.continue' | translate }}
+            </p>
+          </div>
+        </div>
+
+        <!-- 10. Jurisdicción -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-primary mb-4 tracking-wide uppercase">
+            10. {{ 'terms.section10.title' | translate }}
+          </h2>
+          <div class="space-y-3 text-gray-200 dark:text-gray-300 leading-relaxed">
+            <p>{{ 'terms.section10.governed' | translate }}</p>
+            <p>{{ 'terms.section10.disputes' | translate }}</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>{{ 'terms.section10.mediation' | translate }}</li>
+              <li>{{ 'terms.section10.arbitration' | translate }}</li>
+              <li>{{ 'terms.section10.courts' | translate }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="bg-gradient-to-r from-primary/20 to-blue-500/20 backdrop-blur-sm border-2 border-primary rounded-lg p-8">
+          <h2 class="text-2xl font-display font-bold text-gray-100 mb-4 tracking-wide uppercase text-center">
+            📧 {{ 'terms.contact.title' | translate }}
+          </h2>
+          <p class="text-gray-200 dark:text-gray-300 text-center mb-4">
+            {{ 'terms.contact.description' | translate }}
+          </p>
+          <div class="flex flex-col items-center gap-3">
+            <a href="https://discord.gg/AmA4P4Fa" target="_blank" class="flex items-center gap-2 text-primary hover:text-white transition-colors">
+              <span class="material-icons-outlined">discord</span>
+              <span class="font-display tracking-wide">Discord: discord.gg/lytale</span>
+            </a>
+            <a href="mailto:lytaleserver@gmail.com" class="flex items-center gap-2 text-primary hover:text-white transition-colors">
+              <span class="material-icons-outlined">email</span>
+              <span class="font-display tracking-wide">Email: support@lytale.com</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer legal -->
+        <div class="text-center text-gray-500 text-sm mt-8 pb-4">
+          <p>© {{ currentYear }} Lytale. {{ 'terms.footer.rights' | translate }}</p>
+          <p class="mt-2">{{ 'terms.footer.notaffiliated' | translate }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
