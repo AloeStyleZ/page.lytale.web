@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "news": "NEWS",
+    "about": "ABOUT",
+    "shop": "SHOP",
+    "media": "MEDIA",
+    "socials": "SOCIALS",
+    "creators": "Content Creators",
+    "outNow": "Out Now"
+  },
+  "hero": {
+    "title": "Lytale",
+    "subtitle": "Chronicles of Blood and Ice",
+    "launcher": "« Play Now »",
+    "available": "Available Now"
+  },
+  "countdown": {
+    "launchesIn": "Launches In",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "modal": {
+    "title": "Join Lytale Server",
+    "step1": "Step 1: Server Address",
+    "step1Info": "Copy this address and add it to your Hytale launcher",
+    "step2": "Step 2: Get Hytale",
+    "getHytale": "Get Hytale",
+    "getHytaleInfo": "Download or purchase Hytale to start playing",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "needHelp": "Need help getting started?",
+    "guide": "Guide"
+  }
+}

@@ -1,0 +1,24 @@
+<div class="fixed bottom-6 left-6 z-50">
+  <div class="flex gap-2 bg-surface-light dark:bg-surface-dark border border-gray-300 dark:border-gray-700 shadow-lg rounded-full p-2">
+    <button 
+      (click)="changeLanguage('en')"
+      [class.bg-primary]="currentLang === 'en'"
+      [class.text-white]="currentLang === 'en'"
+      [class.text-gray-800]="currentLang !== 'en'"
+      [class.dark:text-gray-200]="currentLang !== 'en'"
+      class="px-4 py-2 rounded-full font-display text-xs tracking-wider transition-all duration-300 hover:scale-105 active:scale-95 uppercase font-semibold"
+    >
+      EN
+    </button>
+    <button 
+      (click)="changeLanguage('es')"
+      [class.bg-primary]="currentLang === 'es'"
+      [class.text-white]="currentLang === 'es'"
+      [class.text-gray-800]="currentLang !== 'es'"
+      [class.dark:text-gray-200]="currentLang !== 'es'"
+      class="px-4 py-2 rounded-full font-display text-xs tracking-wider transition-all duration-300 hover:scale-105 active:scale-95 uppercase font-semibold"
+    >
+      ES
+    </button>
+  </div>
+</div>

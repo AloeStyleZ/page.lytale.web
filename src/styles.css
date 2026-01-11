@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+.text-glow {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Pulso suave personalizado */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.90;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lytale - Chronicles of Blood and Ice</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#d4af37",
+            "background-light": "#fdf6e3",
+            "background-dark": "#050505",
+            "surface-dark": "#121212",
+            "surface-light": "#efe4cf",
+          },
+          fontFamily: {
+            display: ["Cinzel", "serif"],
+            body: ["Lato", "sans-serif"],
+          },
+          backgroundImage: {
+            'hero-vignette': 'radial-gradient(circle at center, transparent 40%, #050505 90%)',
+            'hero-vignette-light': 'radial-gradient(circle at center, transparent 40%, #fdf6e3 90%)',
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          }
+        },
+      },
+    };
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "news": "NOTICIAS",
+    "about": "ACERCA DE",
+    "shop": "TIENDA",
+    "media": "MEDIOS",
+    "socials": "REDES",
+    "creators": "Creadores de Contenido",
+    "outNow": "Disponible Ahora"
+  },
+  "hero": {
+    "title": "Lytale",
+    "subtitle": "Crónicas de Sangre y Hielo",
+    "launcher": "« Jugar Ahora »",
+    "available": "Disponible Ahora"
+  },
+  "countdown": {
+    "launchesIn": "Se Lanza En",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos"
+  },
+  "modal": {
+    "title": "Únete al Servidor Lytale",
+    "step1": "Paso 1: Dirección del Servidor",
+    "step1Info": "Copia esta dirección y agrégala a tu launcher de Hytale",
+    "step2": "Paso 2: Obtener Hytale",
+    "getHytale": "Obtener Hytale",
+    "getHytaleInfo": "Descarga o compra Hytale para empezar a jugar",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "needHelp": "¿Necesitas ayuda para comenzar?",
+    "guide": "Guía"
+  }
+}

@@ -1,0 +1,51 @@
+<nav class="fixed w-full z-50 top-0 left-0 transition-all duration-300 bg-gradient-to-b from-surface-light/90 to-transparent dark:from-black/90 dark:to-transparent backdrop-blur-[2px]">
+  <div class="max-w-[1920px] mx-auto px-6 py-5 flex justify-between items-center">
+    
+    <!-- Left Menu (Desktop) -->
+    <div class="hidden lg:flex items-center space-x-8 text-xs font-display tracking-[0.2em] font-semibold text-gray-800 dark:text-gray-300">
+      <a class="hover:text-primary text-gray-300 dark:text-gray-100 transition-colors duration-300" href="#">{{ 'nav.news' | translate }}</a>
+      
+      <a class="hover:text-primary text-gray-300 dark:text-gray-100 transition-colors duration-300" href="#">{{ 'nav.about' | translate }}</a>
+      
+      <div class="group relative cursor-pointer">
+        <span class="flex items-center text-gray-300 dark:text-gray-100 hover:text-primary transition-colors duration-300">
+          {{ 'nav.shop' | translate }} <span class="material-icons-outlined text-sm ml-1">expand_more</span>
+        </span>
+      </div>
+      
+      <div class="group relative cursor-pointer">
+        <span class="flex items-center text-gray-300 dark:text-gray-100 hover:text-primary transition-colors duration-300">
+          {{ 'nav.media' | translate }} <span class="material-icons-outlined text-sm ml-1">expand_more</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Logo (Mobile) -->
+    <div class="lg:hidden text-primary font-display font-bold text-xl tracking-widest uppercase">
+      Lytale
+    </div>
+
+    <!-- Right Menu (Desktop) -->
+    <div class="hidden lg:flex items-center space-x-8 text-xs font-display tracking-[0.2em] font-semibold text-gray-800 dark:text-gray-300">
+      <div class="group relative cursor-pointer">
+        <span class="flex items-center text-gray-300 dark:text-gray-100  hover:text-primary transition-colors duration-300">
+          {{ 'nav.socials' | translate }} <span class="material-icons-outlined  text-sm ml-1">expand_more</span>
+        </span>
+      </div>
+      
+      <a class="hover:text-primary text-gray-300 dark:text-gray-100 transition-colors duration-300 uppercase" href="#">{{ 'nav.creators' | translate }}</a>
+      
+      <a class="group relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-display font-medium tracking-tighter text-white bg-transparent border border-gray-800 dark:border-gray-500 rounded-full hover:border-primary transition-colors duration-300" href="#">
+        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-primary rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
+        <span class="relative text-gray-300 dark:text-gray-100 flex items-center text-gray-900 dark:text-gray-200 group-hover:text-primary uppercase text-xs tracking-[0.15em]">
+          {{ 'nav.outNow' | translate }} <span class="material-icons-outlined text-sm ml-1">expand_more</span>
+        </span>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="lg:hidden text-gray-800 dark:text-white">
+      <span class="material-icons-outlined text-3xl">menu</span>
+    </button>
+  </div>
+</nav>
