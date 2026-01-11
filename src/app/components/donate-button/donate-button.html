@@ -1,0 +1,31 @@
+<a 
+  href="https://www.buymeacoffee.com/lytale" 
+  target="_blank"
+  rel="noopener noreferrer"
+  class="fixed bottom-24 right-6 z-50 group"
+  title="{{ 'donate.support' | translate }}"
+>
+  <div class="relative">
+    <!-- Botón principal -->
+    <div class="p-2 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl group-active:scale-95">
+      <!-- Icono de café/corazón -->
+      <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 26 26">
+  <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/>
+</svg>
+    </div>
+
+    <!-- Pulso de fondo -->
+    <div class="absolute inset-0 rounded-full bg-yellow-400 opacity-20 animate-ping"></div>
+
+    <!-- Tooltip (aparece al hover) -->
+    <div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+      <div class="bg-surface-light dark:bg-surface-dark border border-primary/40 rounded-lg px-4 py-2 shadow-xl">
+        <span class="font-display text-sm text-gray-800 dark:text-gray-200 tracking-wider">
+          {{ 'donate.support' | translate }}
+        </span>
+        <!-- Flecha del tooltip -->
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45 w-2 h-2 bg-surface-light dark:bg-surface-dark border-r border-b border-primary/40"></div>
+      </div>
+    </div>
+  </div>
+</a>

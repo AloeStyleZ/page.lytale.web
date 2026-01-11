@@ -1,0 +1,32 @@
+<div class="group relative">
+  <span class="flex items-center text-gray-300 dark:text-gray-100 hover:text-primary transition-colors duration-300 cursor-pointer">
+    {{ label }} 
+    <span class="material-icons-outlined text-sm ml-1 group-hover:rotate-180 transition-transform duration-300">
+      expand_more
+    </span>
+  </span>
+  
+  <!-- Dropdown Menu -->
+  <div 
+    [class.left-0]="position === 'left'"
+    [class.right-0]="position === 'right'"
+    class="absolute top-full mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50"
+  >
+    <div class="bg-surface-light dark:bg-surface-dark border border-primary/40 rounded-lg shadow-2xl py-3 px-2 min-w-[200px]">
+      @for (item of mediaLinks; track item.labelKey) {
+        <a 
+          [routerLink]="item.url"
+          routerLinkActive="bg-primary/20"
+          class="flex items-center gap-3 px-4 py-3 hover:bg-primary/10 rounded-lg transition-colors group/item cursor-pointer"
+        >
+          <span class="material-icons-outlined text-primary text-xl">
+            {{ item.icon }}
+          </span>
+          <span class="text-gray-800 dark:text-gray-200 group-hover/item:text-primary transition-colors font-display text-sm tracking-wider uppercase">
+            {{ item.labelKey | translate }}
+          </span>
+        </a>
+      }
+    </div>
+  </div>
+</div>

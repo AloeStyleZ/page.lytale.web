@@ -14,6 +14,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;
+  isCountdownFinished: boolean = false;
   
   private targetDate!: Date;
   private intervalId: any;
@@ -22,28 +23,24 @@ export class CountdownComponent implements OnInit, OnDestroy {
     private cdr: ChangeDetectorRef,
     private translate: TranslateService
   ) {
-    // Detectar cambios de idioma
     this.translate.onLangChange.subscribe(() => {
       this.cdr.detectChanges();
     });
   }
 
-  ngOnInit() {
-    // Establece la fecha objetivo (2 días y 20 horas desde ahora)
-    this.targetDate = new Date();
-    this.targetDate.setDate(this.targetDate.getDate() + 2); // +2 días
-    this.targetDate.setHours(this.targetDate.getHours() + 20); // +20 horas
-    
-    // O puedes establecer una fecha específica:
-    // this.targetDate = new Date('2026-01-15T00:00:00');
-    
+ngOnInit() {
+
+  this.targetDate = new Date(Date.UTC(2026, 0, 13, 23, 0, 0));
+
+
+  this.updateCountdown();
+
+  this.intervalId = setInterval(() => {
     this.updateCountdown();
-    
-    // Actualiza cada segundo
-    this.intervalId = setInterval(() => {
-      this.updateCountdown();
-    }, 1000);
-  }
+  }, 1000);
+}
+
+
 
   ngOnDestroy() {
     if (this.intervalId) {
@@ -56,12 +53,13 @@ export class CountdownComponent implements OnInit, OnDestroy {
     const distance = this.targetDate.getTime() - now;
 
     if (distance < 0) {
-      // Countdown terminado
+      this.isCountdownFinished = true;
       this.days = 0;
       this.hours = 0;
       this.minutes = 0;
       this.seconds = 0;
       clearInterval(this.intervalId);
+      this.cdr.detectChanges();
       return;
     }
 
@@ -70,7 +68,6 @@ export class CountdownComponent implements OnInit, OnDestroy {
     this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-    // Forzar detección de cambios
     this.cdr.markForCheck();
   }
 }

@@ -8,6 +8,11 @@
     "creators": "Content Creators",
     "outNow": "Out Now"
   },
+  "media": {
+    "history": "History",
+    "community": "Community",
+    "events": "Events"
+  },
   "hero": {
     "title": "Lytale",
     "subtitle": "Chronicles of Blood and Ice",
@@ -19,7 +24,11 @@
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",
-    "seconds": "Seconds"
+    "seconds": "Seconds",
+    "availableNow": "Available Now"
+  },
+  "donate": {
+    "support": "Support the Server"
   },
   "modal": {
     "title": "Join Lytale Server",
@@ -32,5 +41,13 @@
     "copied": "Copied!",
     "needHelp": "Need help getting started?",
     "guide": "Guide"
+  },
+    "about": {
+    "welcome": "Welcome to Lytale",
+    "theWorld": "The World of Blood and Ice",
+    "gameplay": "Gameplay Experience",
+    "features": "Unique Features",
+    "joinCta": "The War Awaits",
+    "playNow": "Play Now"
   }
 }

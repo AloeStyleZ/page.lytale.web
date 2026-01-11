@@ -8,6 +8,11 @@
     "creators": "Creadores de Contenido",
     "outNow": "Disponible Ahora"
   },
+  "media": {
+    "history": "Historia",
+    "community": "Comunidad",
+    "events": "Eventos"
+  },
   "hero": {
     "title": "Lytale",
     "subtitle": "Crónicas de Sangre y Hielo",
@@ -19,7 +24,11 @@
     "days": "Días",
     "hours": "Horas",
     "minutes": "Minutos",
-    "seconds": "Segundos"
+    "seconds": "Segundos",
+    "availableNow": "Disponible Ahora"
+  },
+  "donate": {
+    "support": "Apoya al Servidor"
   },
   "modal": {
     "title": "Únete al Servidor Lytale",
@@ -32,5 +41,13 @@
     "copied": "¡Copiado!",
     "needHelp": "¿Necesitas ayuda para comenzar?",
     "guide": "Guía"
+  },
+   "about": {
+    "welcome": "Bienvenido a Lytale",
+    "theWorld": "El Mundo de Sangre y Hielo",
+    "gameplay": "Experiencia de Juego",
+    "features": "Características Únicas",
+    "joinCta": "La Guerra Te Espera",
+    "playNow": "Jugar Ahora"
   }
 }

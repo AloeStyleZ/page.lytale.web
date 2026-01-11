@@ -1,4 +1,15 @@
-<div class="relative">
+<!-- Si el countdown terminó, muestra "Available Now" -->
+<div *ngIf="isCountdownFinished" class="relative">
+  <span class="font-display text-3xl md:text-5xl text-gray-300 dark:text-gray-200 tracking-widest uppercase border-b-2 border-transparent pb-1">
+    {{ 'countdown.availableNow' | translate }}
+  </span>
+  <span aria-hidden="true" class="absolute inset-0 text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-transparent to-black/50 dark:to-black/80 font-display tracking-widest uppercase pointer-events-none">
+    {{ 'countdown.availableNow' | translate }}
+  </span>
+</div>
+
+<!-- Si el countdown NO terminó, muestra el contador -->
+<div *ngIf="!isCountdownFinished" class="relative">
   <!-- Texto "Launches in" o "Se lanza en" -->
   <div class="text-center mb-4">
     <span class="font-display text-xl md:text-2xl text-gray-300 dark:text-gray-200 tracking-widest uppercase">

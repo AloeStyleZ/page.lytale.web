@@ -1,0 +1,212 @@
+<div class="relative min-h-screen">
+  <!-- Background Image -->
+  <div class="fixed inset-0 z-0">
+    <img 
+      alt="Lytale background" 
+      class="w-full h-full object-cover object-center opacity-70 dark:opacity-50" 
+      src="https://bucket.lytale.com/Fondo2.jpg"
+    />
+  </div>
+
+  <!-- Overlays -->
+  <div class="fixed inset-0 z-10 bg-hero-vignette-light dark:bg-hero-vignette pointer-events-none opacity-60 dark:opacity-70"></div>
+  <div class="fixed inset-0 z-10 bg-gradient-to-t from-background-light/20 via-transparent to-background-light/5 dark:from-background-dark/70 dark:via-transparent dark:to-black/50 pointer-events-none"></div>
+  <div class="fixed inset-0 z-10 bg-gradient-to-r from-background-light/15 via-transparent to-background-light/15 dark:from-background-dark/60 dark:via-transparent dark:to-background-dark/60 pointer-events-none"></div>
+
+  <!-- Content -->
+  <div class="relative z-20 min-h-screen pt-32 px-6 pb-12">
+    <div class="max-w-7xl mx-auto">
+      <!-- Título de la página -->
+      <h1 class="text-5xl md:text-7xl font-display font-bold text-gray-200 dark:text-gray-100 mb-12 tracking-wider uppercase text-glow text-center">
+        {{ 'nav.about' | translate }}
+      </h1>
+
+      <div class="space-y-8">
+        <!-- Introducción -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-3xl font-display font-bold text-primary mb-6 tracking-wide uppercase text-center">
+            {{ 'about.welcome' | translate }}
+          </h2>
+          <p class="text-gray-200 dark:text-gray-300 text-lg leading-relaxed mb-4 text-center">
+            Lytale es un servidor de Hytale que te sumerge en un mundo devastado por 67 años de guerra 
+            entre el Imperio y la Alianza Democrática. Aquí, tus decisiones importan tanto como tu espada.
+          </p>
+          <p class="text-gray-200 dark:text-gray-300 text-lg leading-relaxed text-center">
+            Más que un simple survival, Lytale es una experiencia RPG interactiva donde tres visiones 
+            del futuro chocan, y tú decides qué lado de la historia escribirás.
+          </p>
+        </div>
+
+        <!-- El Mundo -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-3xl font-display font-bold text-primary mb-6 tracking-wide uppercase text-center">
+            {{ 'about.theWorld' | translate }}
+          </h2>
+          <p class="text-gray-200 dark:text-gray-300 text-lg leading-relaxed mb-4 text-center">
+            El conflicto entre sangre y hielo ha dejado cicatrices en cada rincón del mundo. Tres figuras 
+            emergen como catalizadores del cambio:
+          </p>
+          <div class="space-y-4 mt-6">
+            <div class="pl-6 border-l-4 border-primary">
+              <h3 class="text-xl font-display font-bold text-gray-100 mb-2">
+                <span class="text-primary">★</span> William Kerch
+              </h3>
+              <p class="text-gray-300 dark:text-gray-400">
+                William Kerch es un estratega brillante y pragmático que manipula su propio bando para poder terminar la guerra, no por poder, sino para alcanzar la paz
+              </p>
+            </div>
+            
+            <div class="pl-6 border-l-4 border-blue-500">
+              <h3 class="text-xl font-display font-bold text-gray-100 mb-2">
+                <span class="text-blue-500">★</span> Ludwig Mints
+              </h3>
+              <p class="text-gray-300 dark:text-gray-400">
+                Desertor imperial de 18 años que descubre la corrupción de ambos bandos. Lidera 
+                una tercera vía: una rebelión que busca destruir ambos sistemas autoritarios.
+              </p>
+            </div>
+            
+            <div class="pl-6 border-l-4 border-red-500">
+              <h3 class="text-xl font-display font-bold text-gray-100 mb-2">
+                <span class="text-red-500">★</span> Rudeus Von Tenmak
+              </h3>
+              <p class="text-gray-300 dark:text-gray-400">
+                Mayor Imperial de 25 años, estratega brillante que busca reformar el Imperio desde 
+                dentro mientras observa cómo las piezas se mueven hacia una guerra total.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiencia de Juego -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-3xl font-display font-bold text-primary mb-6 tracking-wide uppercase text-center">
+            {{ 'about.gameplay' | translate }}
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Survival -->
+            <div class="bg-black/30 p-6 rounded-lg border border-primary/20">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="material-icons-outlined text-primary text-4xl">landscape</span>
+                <h3 class="text-2xl font-display font-bold text-gray-100">Mundo Survival</h3>
+              </div>
+              <p class="text-gray-300 dark:text-gray-400 leading-relaxed">
+                Explora un mundo abierto persistente donde construyes tu base, formas alianzas, 
+                y sobrevives en tierras marcadas por la guerra. Tus construcciones y progresos 
+                son permanentes.
+              </p>
+            </div>
+
+            <!-- Dungeons -->
+            <div class="bg-black/30 p-6 rounded-lg border border-blue-500/20">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="material-icons-outlined text-blue-500 text-4xl">castle</span>
+                <h3 class="text-2xl font-display font-bold text-gray-100">Dungeons Épicas</h3>
+              </div>
+              <p class="text-gray-300 dark:text-gray-400 leading-relaxed">
+                Adéntrate en mazmorras instanciadas diseñadas para grupos. Fortalezas imperiales, 
+                templos antiguos y campos de batalla olvidados te esperan con recompensas únicas.
+              </p>
+            </div>
+
+            <!-- Misiones RPG -->
+            <div class="bg-black/30 p-6 rounded-lg border border-red-500/20">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="material-icons-outlined text-red-500 text-4xl">assignment</span>
+                <h3 class="text-2xl font-display font-bold text-gray-100">Sistema de Misiones</h3>
+              </div>
+              <p class="text-gray-300 dark:text-gray-400 leading-relaxed">
+                Completa misiones narrativas que afectan la historia del servidor. Tus decisiones 
+                en quest chains determinarán qué facción gana poder y cómo evoluciona el conflicto.
+              </p>
+            </div>
+
+            <!-- Facciones -->
+            <div class="bg-black/30 p-6 rounded-lg border border-purple-500/20">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="material-icons-outlined text-purple-500 text-4xl">groups</span>
+                <h3 class="text-2xl font-display font-bold text-gray-100">Tres Facciones</h3>
+              </div>
+              <p class="text-gray-300 dark:text-gray-400 leading-relaxed">
+                Únete al Imperio, la Alianza Democrática, o la Rebelión de Ludwig. Cada facción 
+                tiene sus propias bases, misiones exclusivas, y objetivos en conflicto.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Características Únicas -->
+        <div class="bg-black/40 dark:bg-black/60 backdrop-blur-sm border border-primary/40 rounded-lg p-8">
+          <h2 class="text-3xl font-display font-bold text-primary mb-6 tracking-wide uppercase text-center">
+            {{ 'about.features' | translate }}
+          </h2>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="flex items-start gap-3">
+              <span class="material-icons-outlined text-primary text-2xl mt-1">check_circle</span>
+              <div>
+                <h4 class="font-display font-bold text-gray-100 mb-1">Narrativa Dinámica</h4>
+                <p class="text-sm text-gray-400">Las acciones de los jugadores cambian eventos del servidor</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="material-icons-outlined text-primary text-2xl mt-1">check_circle</span>
+              <div>
+                <h4 class="font-display font-bold text-gray-100 mb-1">Economía Real</h4>
+                <p class="text-sm text-gray-400">Sistema de comercio entre facciones y mercado neutral</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="material-icons-outlined text-primary text-2xl mt-1">check_circle</span>
+              <div>
+                <h4 class="font-display font-bold text-gray-100 mb-1">PvP Territorial</h4>
+                <p class="text-sm text-gray-400">Guerras por control de zonas estratégicas</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="material-icons-outlined text-primary text-2xl mt-1">check_circle</span>
+              <div>
+                <h4 class="font-display font-bold text-gray-100 mb-1">Clases Personalizadas</h4>
+                <p class="text-sm text-gray-400">Sistema de progresión único por facción</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="material-icons-outlined text-primary text-2xl mt-1">check_circle</span>
+              <div>
+                <h4 class="font-display font-bold text-gray-100 mb-1">Eventos Semanales</h4>
+                <p class="text-sm text-gray-400">Batallas masivas y raids cooperativas</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="material-icons-outlined text-primary text-2xl mt-1">check_circle</span>
+              <div>
+                <h4 class="font-display font-bold text-gray-100 mb-1">Lore Profundo</h4>
+                <p class="text-sm text-gray-400">Lore y Jugabilidad Coexisten</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="bg-gradient-to-r from-primary/20 to-red-500/20 backdrop-blur-sm border-2 border-primary rounded-lg p-8 text-center">
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-100 mb-4 tracking-wide uppercase">
+            {{ 'about.joinCta' | translate }}
+          </h2>
+          <p class="text-gray-200 dark:text-gray-300 text-lg mb-6 max-w-3xl mx-auto">
+            Tres hombres, tres visiones de futuro, destinados a chocar en un conflicto que decidirá 
+            si la guerra termina con paz verdadera o la sangre de millones.
+          </p>
+          <p class="text-primary text-xl font-display font-bold mb-8">
+            ¿De qué lado de la historia estarás?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
